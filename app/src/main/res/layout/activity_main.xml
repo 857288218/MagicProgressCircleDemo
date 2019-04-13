@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.rjq.magicprogresscircledemo.MagicProgressCircle
+        android:id="@+id/pb_data"
+        app:mpc_percent="0.65"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:mpc_default_color="#00ffffff"
+        app:mpc_end_color="#ff684e"
+        app:mpc_foot_over_head="true"
+        app:mpc_show_thin_ring="true"
+        app:mpc_start_color="#ffbb77"
+        app:mpc_stroke_width="4dp"
+        app:mpc_thin_ring_color="#66fe7c3d" />
+
+    <com.example.rjq.magicprogresscircledemo.MagicProgressCircle
+        android:id="@+id/pb_data_two"
+        app:mpc_percent="0.45"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:mpc_default_color="#eeeeee"
+        app:mpc_end_color="#ff684e"
+        app:mpc_foot_over_head="true"
+        app:mpc_show_thin_ring="false"
+        app:mpc_start_color="#ffbb77"
+        app:mpc_stroke_width="4dp" />
+
+</android.support.constraint.ConstraintLayout>
